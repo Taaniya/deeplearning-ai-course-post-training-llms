@@ -111,6 +111,8 @@ PPO –
 * [PPO HF article](https://huggingface.co/blog/deep-rl-ppo)
 * [GRPO paper](https://arxiv.org/pdf/2402.03300)
 * [GAE - Generalized Advantage Estimation](https://arxiv.org/pdf/1506.02438)
+* [QWen instruct HF model card](https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct)
+* [Qwen2.5 Technical report](https://arxiv.org/pdf/2412.15115)
 
 
 
