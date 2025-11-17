@@ -67,18 +67,19 @@ Different choices of reward function in ORL –
 
 * Trained model – The model is trained such that the preferred responses are given higher reward by the model and less preferred responses are given lower reward. The preferences are collected from human labelled data
 
+<img width="1277" height="662" alt="image" src="https://github.com/user-attachments/assets/0b44ca65-c9e5-4065-93e1-b66a1912b2d4" />
 
 #### PPO -
 (With reference to architecture diagram for PPO and GRPO) -
 * The policy model here is the LLM itself
 * Yellow blocks refer to trainable models in this architecture where the model weights are updated.
-* Blue blocks refer to frozen models with frozen and won’t undergo any weight update in this process of online RL
+* Blue blocks refer to frozen models with frozen and won't undergo any weight update in this process of online RL
 * Value model is a critic model that tries to assign credits to each individual token so that one can decompose the response level reward into a token level reward
-* Essentially, after we get a reward, and the value model’s output, we use the technique GAE to estimate ‘advantage’ which characterizes the credits for each individual token / contribution of each token to the entire process.
+* Essentially, after we get a reward, and the value model’s output, we use the technique GAE to estimate 'advantage' which characterizes the credits for each individual token / contribution of each token to the entire process.
 * Thus, by looking at the individual advantage, we can use that as a signal to guide the update of the policy model
-* So, in PPO, essentially, we try to maximize return or the advantage for your current policy model – pi_theta
+* So, in PPO, essentially, we try to maximize return or the advantage for your current policy model – $\pi_{theta}$
 
-* Since here, we cannot sample the most recent output from the policy model, we try to maximize the expected advantage basically. This expected advantage is denoted by A_t
+* Since here, we cannot sample the most recent output from the policy model, we try to maximize the expected advantage basically. This expected advantage is denoted by $A_t$
 * Direct Ratio – $\pi_{\theta} / \pi_{\theta_{old}}$
 * current step LLM = $\pi_{\theta}$
 * previous step LLM = $\pi_{\theta_{old}}$
