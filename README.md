@@ -64,7 +64,8 @@ There are 2 phases of training of LLMs -
 2.	GRPO – Grouped relative policy optimization
 
 Different choices of reward function in ORL –
-Trained model – The model is trained such that the preferred responses are given higher reward by the model and less preferred responses are given lower reward. The preferences are collected from human labelled data
+
+* Trained model – The model is trained such that the preferred responses are given higher reward by the model and less preferred responses are given lower reward. The preferences are collected from human labelled data
 
 
 #### PPO -
