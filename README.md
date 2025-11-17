@@ -79,9 +79,9 @@ Different choices of reward function in ORL –
 * So, in PPO, essentially, we try to maximize return or the advantage for your current policy model – pi_theta
 
 * Since here, we cannot sample the most recent output from the policy model, we try to maximize the expected advantage basically. This expected advantage is denoted by A_t
-* Direct Ratio – pi_theta / pi_theta_old
-* Pi_theta = current step LLM
-* Pi_theta_old = previous step LLM
+* Direct Ratio – $\pi_{\theta} / \pi_{\theta_{old}}$
+* current step LLM = $\pi_{\theta}$
+* previous step LLM = $\pi_{\theta_{old}}$
 * The clip function is to make sure that this direct ratio is not too large or too small during this training process
 
 #### GRPO –
