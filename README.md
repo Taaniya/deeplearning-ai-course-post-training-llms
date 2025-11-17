@@ -14,6 +14,8 @@ There are 2 phases of training of LLMs -
     * This is where the model learns to predict the next word / token and gains world knowledge from everywhere
     * This forms the base model for any subsequent customizations performed
     * From compute and cost point of view, this is the bulk of training & may require training on trillions & tens of trillions of tokens of text. For very large models, this could take months
+    * This is unsupervised learning
+      
 * Post-training -
     * This is where the model is further trained to perform more specific tasks (For e.g., like answering questions), change behaviours, enhance capabilities etc.
     * This phases usually uses much smaller dataset and also much faster & cheaper
