@@ -28,7 +28,7 @@ There are 2 phases of training of LLMs -
 **Direct Preference Optimization –** 
 * DPO teaches a model by showing it both good and bad answers
 * DPO gives the model 2 options for the same prompt – 1 preferred over the other
-* DPO through a constructive loss, pushes a model closer to good and away from bad responses
+* DPO through a contrastive loss, pushes a model closer to good and away from bad responses
 * We’ll use DPO on a small Qwen instruction model to change its identity
 
 **Online RL –**
